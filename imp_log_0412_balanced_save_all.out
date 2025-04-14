@@ -1,0 +1,2445 @@
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP262b_phaseII/HUP262b_phaseII.mat
+/lustre06/project/6071332/yqxu/earEEG/data_analysis_save_all.py:261: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  onset_indices = [int(onset[0][0] * fs) for onset in seizure_info]
+Before balancing: {0: 69462, 1: 3600, 2: 120}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (73182, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (73182,)
+After balancing: {0: 120, 1: 120, 2: 120}
+Balanced data shape: (360, 4, 512)
+test_dataset {0: 7462777, 1: 1843200, 2: 61442}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP267_phaseII/HUP267_phaseII.mat
+Before balancing: {0: 24679, 1: 8574, 2: 240}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (33493, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (33493,)
+After balancing: {0: 240, 1: 240, 2: 240}
+Balanced data shape: (720, 4, 512)
+test_dataset {0: 3334865, 1: 921600, 2: 30721}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP269_phaseII/HUP269_phaseII.mat
+Before balancing: {0: 92215, 1: 23378, 2: 960}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (116553, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (116553,)
+After balancing: {0: 960, 1: 960, 2: 960}
+Balanced data shape: (2880, 4, 512)
+test_dataset {0: 4462192, 1: 10057334, 2: 399373}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP270_phaseII/HUP270_phaseII.mat
+Before balancing: {0: 245423, 1: 23255, 2: 1380}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (270058, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (270058,)
+After balancing: {0: 1380, 1: 1380, 2: 1380}
+Balanced data shape: (4140, 4, 512)
+test_dataset {0: 19405549, 1: 13932710, 2: 1229266}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP271_phaseII/HUP271_phaseII.mat
+Before balancing: {0: 70576}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (70576, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (70576,)
+After balancing: {0: 70576}
+Balanced data shape: (70576, 4, 512)
+test_dataset {0: 7129159, 1: 1843200, 2: 61442}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP272_phaseII/HUP272_phaseII.mat
+Before balancing: {0: 370829, 1: 5400, 2: 180}
+data.shape in balance_classes (expecting: [#seg, 4, 512]) (376409, 4, 512)
+labels.shape in balance_classes (expecting: [#seg]) (376409,)
+After balancing: {0: 180, 1: 180, 2: 180}
+Balanced data shape: (540, 4, 512)
+test_dataset {0: 47228053, 1: 921600, 2: 30721}
+
+For patient: /home/yqxu/projects/def-xilinliu/data/UPenn_data/HUP273c_phaseII/HUP273c_phaseII.mat
+class SeizureDataset:
+    Before balancing: {0: 68979}
+    data.shape in balance_classes (expecting: [#seg, 4, 512]) (68979, 4, 512)
+    labels.shape in balance_classes (expecting: [#seg]) (68979,)
+    After balancing: {0: 68979}
+    Balanced data shape: (68979, 4, 512)
+
+test_dataset {0: 7494682, 1: 1304015, 2: 30721}
+
+
+len(self.segments_data) 360
+len(self.segments_labels) 360
+len(self.segments_data) 720
+len(self.segments_labels) 720
+len(self.segments_data) 2880
+len(self.segments_labels) 2880
+len(self.segments_data) 4140
+len(self.segments_labels) 4140
+len(self.segments_data) 70576
+len(self.segments_labels) 70576
+len(self.segments_data) 540
+len(self.segments_labels) 540
+len(self.segments_data) 68979
+len(self.segments_labels) 68979
+
+len(self.segments_data) 18295
+len(self.segments_labels) 18295
+len(self.segments_data) 8373
+len(self.segments_labels) 8373
+len(self.segments_data) 29138
+len(self.segments_labels) 29138
+len(self.segments_data) 67514
+len(self.segments_labels) 67514
+len(self.segments_data) 17644
+len(self.segments_labels) 17644
+len(self.segments_data) 94102
+len(self.segments_labels) 94102
+len(self.segments_data) 17244
+len(self.segments_labels) 17244
+
+train_set.pth & test_set.pth ALL saved
+
+Number of training batches: 290
+Number of test batches: 493
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 272, 1: 120, 2: 120}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 88, 1: 240, 2: 184}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 456, 2: 56}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 504, 1: 8}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 440, 2: 72}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {2: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 136, 2: 376}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 220, 1: 292}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 64, 2: 448}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {2: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 92, 2: 420}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 152, 1: 180, 2: 180}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Batch shape: torch.Size([227, 4, 512])
+Labels shape: torch.Size([227])
+Class distribution in batch: {0: 227}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 240, 1: 272}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 504, 2: 8}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 460, 2: 52}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 137, 1: 316, 2: 59}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 232, 1: 280}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 496, 2: 16}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 468, 2: 44}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 161, 1: 351}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 27, 1: 425, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 109, 1: 403}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 509, 2: 3}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 455, 2: 57}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 484, 2: 28}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 480, 2: 32}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 84, 1: 368, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 186, 1: 326}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 2, 1: 450, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 11, 1: 501}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 497, 2: 15}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 347, 2: 165}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 324, 2: 188}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 421, 2: 91}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 491, 2: 21}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 392, 2: 120}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 332, 2: 180}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 332, 2: 180}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 332, 2: 180}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 392, 2: 120}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 392, 2: 120}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 391, 2: 121}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 486, 2: 26}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 478, 2: 34}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 496, 2: 16}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 468, 2: 44}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 452, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 72, 1: 381, 2: 59}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 124, 1: 388}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 64, 1: 388, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 352, 1: 160}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 348, 1: 104, 2: 60}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 246, 1: 266}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 510, 2: 2}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 454, 2: 58}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {0: 360, 1: 152}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([512, 4, 512])
+Labels shape: torch.Size([512])
+Class distribution in batch: {1: 512}
+Test Batch shape: torch.Size([406, 4, 512])
+Labels shape: torch.Size([406])
+Class distribution in batch: {1: 347, 2: 59}
